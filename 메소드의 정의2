@@ -1,0 +1,13 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		Absolute(12,5);
+		Absolute(5,12);
+	}
+	
+	public static void Absolute(int a, int b) {
+		System.out.printf("%d\n", Math.abs(a-b));
+	}
+	
+}
