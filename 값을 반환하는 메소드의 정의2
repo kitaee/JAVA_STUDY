@@ -1,0 +1,24 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Prime number : 2");
+		for(int k=3;k<=100;k++) {
+			if(isPrime(k)) {
+				System.out.printf("Prime number : %d\n",k);
+			}			else {
+				continue;
+			}
+		}
+	}
+	
+	public static boolean isPrime(int n) {
+		for(int i=2; i<n;i++) {
+			if(n%i==0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+}
