@@ -1,0 +1,32 @@
+class Triangle{
+	int line;
+	int height;
+	
+	public Triangle(int l, int h) {
+		line = l;
+		height = h;
+	}
+	public void setLine(int n) {
+		line=n;
+	}
+	
+	public void setHeight(int n) {
+		height = n;
+	}
+	
+	public double getArea() {
+		return 0.5*line*height;
+	}
+}
+
+public class UsingTriangle {
+
+	public static void main(String[] args) {
+		Triangle t1 = new Triangle(4,6);
+		t1.setLine(8);
+		t1.setHeight(12);
+		double area = t1.getArea();
+		System.out.println(area);
+	}
+
+}
