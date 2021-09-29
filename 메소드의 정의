@@ -2,14 +2,15 @@
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		Calculate(4,5);
-		int num1=23;
-		int num2=24;
-		Calculate(num1,num2);
+		Calculate(25,5);
 	}
 	
 	public static void Calculate(int a, int b) {
-		System.out.println(a+b);
+		System.out.printf("%d + %d = %d\n",a,b,a+b);
+		System.out.printf("%d - %d = %d\n",a,b,a-b);
+		System.out.printf("%d * %d = %d\n",a,b,a*b);
+		System.out.printf("%d / %d = %d\n",a,b,a/b);
+		System.out.printf("%d mod %d = %d\n",a,b,a%b);
 	}
 
 }
