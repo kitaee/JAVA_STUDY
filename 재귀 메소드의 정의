@@ -1,0 +1,19 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		int n=10;
+		int result=square(n);
+		System.out.println(result);
+	}
+	
+	public static int square(int num) {
+		if(num==0) {
+			return 1;
+		}
+		else {
+			return 2*square(num-1);
+		}
+	}
+	
+}
